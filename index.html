@@ -6,30 +6,60 @@
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
     <title>Cina Ha's Portfolio Home Page</title>
+	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <!--Practice Notes!-->
     <header>
-        <!--Logo would go here-->
         <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
+            <div class="logo"><a href="#hero">Cina Ha</a></div>
+            <div class="nav_link">
+                <a href="index.html" class ="current">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </div>
         </nav>
     </header>
     <main>
-        <img src="images/PFP-For-Work.jpg" alt="Cina Ha's Profile Picture" width="200" height="200">
-        <h1>Hi, I'm Cina. Welcome to my website!</h1>
-        <p>Feel free to look around :D</p>
-        <section>
-            <a href="resume.html"><h2>Check Out My Resume!</h2></a>
+        <section id="hero">
+                <img src="images/PFP-For-Work.jpg" alt="Cina Ha standing in front of a park with lots of green trees." class="hero_pfp">
+			    <div class="center_title_paragraph">
+                <p>Hiya! I'm</p>
+                <h1>Cina Ha</h1>
+                <p id="hero_accent_text"><b>UI/UX Designer & Front End Developer</b></p>
+                </div>
+		</section>
+
+        <section id="projects">
+            <div class="center_title_paragraph">
+                <p>Browse My Recent</p>
+			    <h2>Projects</h2>
+            </div>
+            <div class="projects_boxes">
+                <article class="project-card">
+				    <h3>Asian American Women's Coalition Case Study</h3>
+				    <p>A redesign of a native Philadelphia non-profit website on three interfaces and deep, meaningful UX research.</p>
+                    <button class="btn" onclick="location.href='project.html'">
+                        View Project
+                    </button>
+			    </article>
+                <article class="project-card">
+				    <h3>Britannica HCI Research & Wireframing</h3>
+                    <p>A wireframe project involving intricate research to improving user experience through key HCI principles.</p>
+                    <button class="btn" onclick="location.href='project.html'">
+                        View Project
+                    </button>
+			    </article>
+            </div>
         </section>
     </main>
     <footer>
         <nav aria-label="Footer">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
+            <div class="nav_link">
+                <a href="index.html" class ="current">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </div>
         </nav>
     </footer>
 </body>

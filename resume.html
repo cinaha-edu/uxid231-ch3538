@@ -4,63 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cina Ha Resume</title>
+	<link rel="stylesheet" href="styles.css" />
+
 </head>
 <body>
     <header> 
         <!--Logo would go here-->
         <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
+            <div class="logo"><a href="#hero">Cina Ha</a></div>
+            <div class="nav_link">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html" class ="current">Resume</a>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>RESUME</h1>
-        <!--target blank opens new tab-->
-        <a href="https://drive.google.com/file/d/1sRSElOae4cUI_LdbYjcLgY6Rl-iupMUM/view?usp=sharing" target="_blank">Download Resume</a>
-        <h2>Education</h2>
-        <p><b>Drexel University</b>, Philadelphia, PA -- <i>Bachelor of Science</i></p>
-        <ul>
-            <li>Anticipated Graduation: 2030</li>
-            <li>User Experience & Interaction Design Major, Human-Computer Interaction Minor</li>
-            <li>GPA: 3.87, Dean's List</li>
-        </ul>
-        <h2>Skills</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Designing Tools</th>                    
-                    <th scope="col">Programming Languages</th>
-                    <th scope="col">UI/UX Research</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Figma</td>
-                    <td>HTML</td>
-                    <td>Wireframing</td>
-                </tr>
-                <tr>
-                    <td>Adobe Photoshop</td>
-                    <td>CSS</td>
-                    <td>User Research</td>
-                </tr>
-            </tbody>
-        </table>  
-        <h2>Work Experience</h2>
-        <p><b>Student IT Support Assistant,</b> Drexel School of Computer and Information Sciences -- <i>Sept, 2026 - Present</i></p>
-        <ul>
-            <li>Troubleshoot hardware, software, and network connectivity issues for Drexel faculty and students through system diagnostics</li>
-            <li>Manage Audio/Video and Echo systems in classrooms to prevent and resolve issues quickly during class times</li>
-            <li>Handle IT help requests through TeamDynamix by responding to tickets, documenting troubleshooting steps, and escalating complex issues to full-time IT staff</li>
-            <li>Work alongside and report to a large team of 20+ student IT assistants and IT professionals/executives</li>
-        </ul>
+        <section id="resume">
+            <h1>RESUME</h1>
+            <a href="https://drive.google.com/file/d/1sRSElOae4cUI_LdbYjcLgY6Rl-iupMUM/view?usp=sharing" target="_blank">
+                <button class="btn">
+                Download Resume
+                </button>
+            </a>
+            <h2>Education</h2>
+            <p><b>Drexel University</b>, Philadelphia, PA -- <i>Bachelor of Science</i></p>
+            <ul>
+                <li>Anticipated Graduation: 2030</li>
+                <li>User Experience & Interaction Design Major, Human-Computer Interaction Minor</li>
+                <li>GPA: 3.87, Dean's List</li>
+            </ul>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Designing Tools</th>                    
+                        <th scope="col">Programming Languages</th>
+                        <th scope="col">UI/UX Research</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Figma</td>
+                        <td>HTML</td>
+                        <td>Wireframing</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Photoshop</td>
+                        <td>CSS</td>
+                        <td>User Research</td>
+                    </tr>
+                </tbody>
+            </table>  
+            <h2>Work Experience</h2>
+            <p><b>Student IT Support Assistant,</b> Drexel School of Computer and Information Sciences -- <i>Sept, 2026 - Present</i></p>
+            <ul>
+                <li>Troubleshoot hardware, software, and network connectivity issues for Drexel faculty and students through system diagnostics</li>
+                <li>Manage Audio/Video and Echo systems in classrooms to prevent and resolve issues quickly during class times</li>
+                <li>Handle IT help requests through TeamDynamix by responding to tickets, documenting troubleshooting steps, and escalating complex issues to full-time IT staff</li>
+                <li>Work alongside and report to a large team of 20+ student IT assistants and IT professionals/executives</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <nav aria-label="Footer">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
+            <div class="nav_link">
+                <a href="index.html" class ="current">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </div>
         </nav>
     </footer>
 </body>
