@@ -16,3 +16,4 @@ Week 4: No AI Used.
 Week 5: No AI Used.  
 Week 6: No AI Used.  
 Week 7: No AI Used.  
+Week 8: No AI Used.  

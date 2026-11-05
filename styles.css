@@ -6,10 +6,15 @@
     --light-accent-lightgray: #666666;
 
     --font-bold: 650;
+    --font-size-smallest: 0.75rem;
     --font-size-base: 1rem;
     --font-size-bigger: 2rem;
 	--font-size-heading: 3rem;
     --font-size-heading-2: 2.5rem;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 section {
@@ -34,13 +39,12 @@ body {
 }
 
 p {
-    padding: 0.5;
+    text-align: left;
 }
 
 h1 {
     font-size: var(--font-size-heading);
-    line-height: 0.75rem;
-    margin-top: 1rem;
+    line-height: 3rem;
     text-align: center;
 
 }
@@ -48,18 +52,26 @@ h1 {
 h2 {
     font-size: var(--font-size-heading-2);
     text-align: center;
-    line-height: 2rem;
-    margin-top: 1rem;
+    line-height: 3rem;
+    margin-top: 0rem    ;
 
+}
+
+h3 {
+    margin: 0;
+}
+
+.center_title_paragraph {
+    text-align: center;
 }
 
 /* 0. NAVIGATION */
 
 nav, nav a {
-    text-decoration: none;
     font-size: var(--font-size-base);
+    text-decoration: none;
     color: var(--main-black);
-    margin: 0.35rem 0.35rem;
+    margin: 0.3rem 0.3rem;
 }
 
 a:hover {
@@ -82,18 +94,38 @@ nav a.current {
 }
 
 .btn {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-  border: 0;
-  box-shadow: 0.15rem 0.15rem 0 0 var(--light-accent-lightgray);
-  width: fit-content;
+    background-color: var(--dark-accent-darkgray);
+    color: var(--color-background);
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-bold);
+    padding: 0.75rem;
+    border-radius: 2rem;
+    border: 0;
+    width: fit-content;
 }
 
+.btn:hover {
+    background-color: var(--background-color);
+    color: var(--dark-accent-darkgray);
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-bold);
+    padding: 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid var(--dark-accent-darkgray);
+    width: fit-content;
+}
+
+
+
 /* HERO SECTION */
+
 #smallest-heading-text {
     font-size: var(--font-size-smallest);
+}
+
+.hero-title {
+    line-height: 0.25rem;
+    margin-top: 1.5rem;
 }
 
 .hero_pfp {
@@ -105,7 +137,8 @@ nav a.current {
 }
 
 #hero_accent_text {
-    color: var(--dark-accent-color-text);
+    text-align: center;
+    color: var(--light-accent-lightgray);
     size: var(--font-size-bigger);
     font-weight: var(--font-bold);
 }
@@ -114,14 +147,25 @@ nav a.current {
 
 .project-card {
     border: 1px;
+    gap: 1rem;
+    padding: 2rem;
     border-style: solid;
-    border-radius: 15%;
+    border-radius: 32px;
     border-color: var(--dark-accent-color-text);
     text-align: center;
     margin-bottom: 2rem;
 }
 
+.project-card-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 10%;
+}
 
+.about-title {
+    margin-top: 0.5rem;
+}
 
 .about_pfp {
     width: 200px;         
@@ -133,4 +177,27 @@ nav a.current {
 
 .about_me_text {
     text-align: left;
+}
+
+/* RESUME */
+
+ul {
+    text-align: left;
+}
+
+#resume-title {
+    text-align: center;
+    margin-block: 3rem;
+}
+
+/* Portfolio */
+
+.portfolio_title {
+    font-weight: var(--font-bold);
+}
+
+.portfolio_pictures {
+    width: 100%;
+    height: auto;
+    margin-block: 0.5rem;
 }
