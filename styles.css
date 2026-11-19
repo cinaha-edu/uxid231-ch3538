@@ -35,7 +35,6 @@ body {
     Roboto,
     sans-serif;
   font-size: var(--font-size-base);
-  max-width: 95%;
   padding: 1rem;
 }
 
@@ -53,12 +52,15 @@ h2 {
 }
 
 h3 {
-  margin-block: 0rem;
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 
 .center_title_paragraph {
   text-align: center;
+}
+
+.bold {
+  font-weight: var(--font-bold);
 }
 
 /* 0. NAVIGATION */
@@ -113,6 +115,10 @@ nav a.current {
 
 /* HERO SECTION */
 
+#hero {
+  margin-block: 3rem;
+}
+
 #smallest-heading-text {
   font-size: var(--font-size-smallest);
 }
@@ -157,8 +163,13 @@ nav a.current {
   border-radius: 10%;
 }
 
-#projects_h2 {
+.projects_h2 {
   margin-top: -0.5rem;
+}
+
+.indexh3 {
+  margin-block: 0rem;
+  margin-bottom: 1rem;
 }
 
 .about-title {
@@ -197,4 +208,12 @@ ul {
 .portfolio_pictures {
   width: 100%;
   height: auto;
+}
+
+.initial-research-pic {
+  width: 100%;
+}
+
+.list {
+  font-size: var(--font-size-base);
 }
